@@ -13,14 +13,17 @@ export default function LandingPage() {
         <h1 className="text-4xl font-bold tracking-tight">
           {process.env.NEXT_PUBLIC_APP_NAME ?? 'App'}
         </h1>
+
+        <h2 className="text-2xl font-semibold">
+          Welcome to my project
+        </h2>
+
         <p className="max-w-md text-lg text-zinc-600 dark:text-zinc-400">
-          Your app description goes here. Edit{' '}
-          <code className="rounded bg-zinc-100 px-1 py-0.5 font-mono text-sm dark:bg-zinc-800">
-            src/app/page.tsx
-          </code>{' '}
-          to get started.
+          This application demonstrates a simple Next.js interface with Firebase authentication.
+          Users can sign in or create a new account to access the application.
         </p>
       </div>
+
       <div className="flex gap-4">
         <Link
           href="/auth/signin"
@@ -28,6 +31,7 @@ export default function LandingPage() {
         >
           Sign in
         </Link>
+
         <Link
           href="/auth/signup"
           className="inline-flex items-center justify-center rounded-md border border-zinc-200 bg-white px-6 py-2.5 text-sm font-medium shadow-sm transition-colors hover:bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900 dark:hover:bg-zinc-800"
